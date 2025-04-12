@@ -4,7 +4,7 @@ import Item from "./Item";
 export default function PackingList({
   items,
   onDeleteItem,
-  onToggleItem,
+  onPackedItems,
   onClearList,
 }) {
   const [sortBy, setSortBy] = useState("input");
@@ -30,7 +30,7 @@ export default function PackingList({
           <Item
             item={item}
             onDeleteItem={onDeleteItem}
-            onToggleItem={onToggleItem}
+            onPackedItems={onPackedItems}
             key={item.id}
           />
         ))}

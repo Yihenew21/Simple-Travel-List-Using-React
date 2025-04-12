@@ -26,7 +26,9 @@ export default function App() {
   }
 
   function handleclearList() {
-    setItems([]);
+    const confirmed = window.confirm("Are You Sure To Clear Your Lists?");
+
+    if (confirmed) setItems([]);
   }
 
   return (
